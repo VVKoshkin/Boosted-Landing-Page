@@ -485,6 +485,15 @@ hr {
 .sixth-screen-cards__btn {
     position: absolute;
     top: 50%;
+    border: none;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    background-image: url('../img/arrow.svg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: rgba(255,255,255,0.75);
+   
 }
 
 .btn-back {
@@ -493,6 +502,7 @@ hr {
 
 .btn-forw {
     right: 0;
+    transform: rotateZ(180deg);
 }
 
 .sixth-screen-card__img {
