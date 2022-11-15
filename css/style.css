@@ -33,6 +33,10 @@ hr {
     margin-bottom: 20px;
 } 
 
+.fullScaleX {
+    transform: scaleX(1)!important;
+}
+
 .posr {
     position: relative;
 }
@@ -66,7 +70,12 @@ hr {
     background: #FF4A32;
     border-radius: 35px;
     color: #FFF;
+    transition: scale .5s;
+}
 
+.btn:hover {
+    scale: 1.1;
+    background: #ff6450;
 }
 
 .header {
@@ -140,6 +149,7 @@ hr {
     flex-direction: column;
     align-items: center;
     display: none;
+    cursor: pointer;
 }
 
 
@@ -284,10 +294,27 @@ hr {
 .second-screen-card {
     position: relative;
     max-width: 50%;
+    cursor: pointer;
 }
 
 .second-screen-card__img {
     max-width: 100%;
+}
+
+.card-img-fading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: background 0.5s;
+    background:rgba(0, 0, 0, 0.4);
+    z-index: 2;
+}
+
+.card-img-fading:hover {
+    background: rgba(0, 0, 0, 0.0);
+
 }
 
 .second-screen-card-intext {

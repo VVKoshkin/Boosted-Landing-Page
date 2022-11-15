@@ -32,7 +32,9 @@
         height: 0;
     }
 
-    .navbar-elements {display: none;
+    .navbar-elements {
+        transition: transform 0.5s;
+        display: none;
         background-color: #fff;
         width: 100%;
         margin-top: 25px;
