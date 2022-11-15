@@ -6,6 +6,18 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+.youtube-frames {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.youtube-frame {
+    width: 540px;
+    height: 304px;
+    margin-bottom: 10px;
+}
+
 a {
     text-decoration: none;
     color: #000;
@@ -71,7 +83,7 @@ hr {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 66px;
+    min-height: 66px;
 }
 
 .navbar {
@@ -89,7 +101,6 @@ hr {
 .navbar-elements {
     display: flex;
     align-items: center;
-    flex-grow: 1;
 }
 
 .navbar-element {
@@ -146,7 +157,7 @@ hr {
 .screen-width-bgi {
     background-position: top center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
 }
 
 .footer-socnets {
@@ -185,6 +196,10 @@ hr {
     color: #FBFBFB;
 }
 
+.header-links {
+    margin-left: 390px;
+}
+
 .header-basic {
     display: flex;
     align-items: center;
@@ -194,6 +209,7 @@ hr {
 .first-screen {
     background-image: url('../img/first_screen_bg.jpg');
     text-align: center;
+    padding-bottom: 620px;
 }
 
 .first-screen__headline {
@@ -209,7 +225,6 @@ hr {
 
 .first-screen-btn {
     margin-top: 20px;
-    margin-bottom: 620px;
     padding: 10px 45px;
 }
 
@@ -223,6 +238,7 @@ hr {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     height: 100%;
 }
 
@@ -262,10 +278,16 @@ hr {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
+    flex-wrap: wrap;
 }
 
 .second-screen-card {
     position: relative;
+    max-width: 50%;
+}
+
+.second-screen-card__img {
+    max-width: 100%;
 }
 
 .second-screen-card-intext {
@@ -357,11 +379,11 @@ hr {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .fourth-screen-img {
-    width: 380px;
-    height: 380px;
+    max-width: 100%;
 }
 
 .fourth-screen-form {
@@ -405,15 +427,16 @@ hr {
 
 .fifth-screen-cards {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .fifth-screen-card {
     position: relative;
+    max-width: 33.33333333%;
 }
 
 .fifth-screen-card>img {
-    width: 480px;
-    height: 480px;
+    max-width: 100%;
 }
 
 .fifth-screen-card-text {
@@ -447,12 +470,10 @@ hr {
     color: #FFFFFF;
 }
 
+
+
 .youtube-screen {
     padding-bottom: 10px;
-}
-
-.youtube-screen iframe:first-of-type {
-    margin-right: 20px;
 }
 
 .sixth-screen {
@@ -476,6 +497,7 @@ hr {
 
 .sixth-screen-cards {
     display: flex;
+    flex-wrap: wrap;
     max-width: 1440px;
     justify-content: space-between;
     position: relative;
@@ -546,11 +568,13 @@ hr {
 
 .seventh-screen {
     background-color: #000;
-    min-height: 310px;
+    min-height: 280px;
+    padding-bottom: 30px;
 }
 
 .seventh-screen-cards {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     margin: 0 auto;
     max-width: 1440px;

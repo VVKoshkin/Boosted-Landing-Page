@@ -24,14 +24,15 @@
         </div>
 
         <div class="container header-container">
-            <a class="navbar-logo"><img src="img/logo.png" alt="Logo"></a>
             <div class="navbar">
+                <a class="navbar-logo"><img src="img/logo.png" alt="Logo"></a>
                 <div class="navbar-hamburger">
                     <!-- will be shown when screen width less then 1200px -->
                     <div class="navbar-hamburger__line"></div>
                     <div class="navbar-hamburger__line"></div>
                     <div class="navbar-hamburger__line"></div>
                 </div>
+                <!-- <div class="break"></div> -->
                 <div class="navbar-elements">
                     <!-- whole block will be hidden when screen width less then 1200px -->
                     <div class="navbar-element"><a class="navbar-element__link" href="#">Electric Skateboards</a>
@@ -40,12 +41,10 @@
                     <div class="navbar-element"><a class="navbar-element__link" href="#">Accessories</a></div>
                     <div class="navbar-element"><a class="navbar-element__link" href="#">Gift Card</a></div>
                     <div class="navbar-element"><a class="navbar-element__link" href="#">More Info</a></div>
-                </div>
-                <div class="header-links">
-                    <a href="#" class="header-link"><img src="img/icons/profile.svg" alt="profile"
-                            class="header-link__pic"></a>
-                    <a href="#" class="header-link"><img src="img/icons/cart.svg" alt="cart"
-                            class="header-link__pic"></a>
+                    <div class="header-links navbar-element">
+                        <a href="#" class="header-link"><img src="img/icons/profile.svg" alt="profile" class="header-link__pic"></a>
+                        <a href="#" class="header-link"><img src="img/icons/cart.svg" alt="cart" class="header-link__pic"></a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -147,12 +146,12 @@
             </div>
         </section>
         <section class="youtube-screen">
-            <div class="container">
-                <iframe width="540" height="304" src="https://www.youtube.com/embed/78bXV1ZqQWI"
+            <div class="container youtube-frames">
+                <iframe class="youtube-frame" src="https://www.youtube.com/embed/78bXV1ZqQWI"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
-                <iframe width="540" height="304" src="https://www.youtube.com/embed/oAQxk9dOJ8k"
+                <iframe class="youtube-frame" src="https://www.youtube.com/embed/oAQxk9dOJ8k"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>

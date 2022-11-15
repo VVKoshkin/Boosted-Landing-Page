@@ -1,7 +1,19 @@
 @media screen and (max-width: 1200px) {
 
+    .container {
+        max-width: 90vw;
+    }
+
+    .header-container {
+        max-width: 90vw;
+    }
+
     .navbar {
-        display: block;
+        flex-wrap: wrap;
+    }
+
+    .navbar-logo>img {
+        margin-right: 0;
     }
 
     .navbar-logo {
@@ -11,21 +23,28 @@
     .navbar-hamburger {
         display: inline-block;
         vertical-align: middle;
-        float: right;
         margin-top: 5px;
     }
 
-    .navbar-elements {
-        flex-direction: column;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        align-items: baseline;
-        margin-left: 0;
-        display: none;
+    .break {
+        flex-basis: 100%;
+        width: 0;
+        height: 0;
+    }
+
+    .navbar-elements {display: none;
+        background-color: #fff;
+        width: 100%;
+        margin-top: 25px;
+        text-align: right;
     }
 
     .navbar-elements>* {
         margin-bottom: 20px;
+    }
+
+    .navbar-element {
+        margin-right: 0;
     }
 
     .navbar-element__button {
@@ -36,4 +55,61 @@
         width: 100%;
     }
 
+    .header-links {
+        margin-left: 0;
+    } 
+
+}
+
+@media screen and (max-width: 450px) {
+    .container {
+        max-width: 350px;
+    }
+
+    .second-screen-card {
+        max-width: 100%;
+    }
+
+    .first-screen-footer {
+        height: fit-content;
+    }
+
+    .first-screen-footer-logos {
+        height: max-content;
+        min-height: 85px;
+        flex-direction: column;
+    }
+
+    .first-screen-footer-logo {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .fifth-screen-cards {
+        flex-direction: column;
+    }
+
+    .fifth-screen-card {
+        max-width: 100%;
+    }
+
+    .footer-cards {
+        flex-direction: column;
+    }
+
+    .footer-card {
+        margin-bottom: 15px;
+    }
+
+    .footer-bottom-content {
+        flex-direction: column;
+    }
+
+    .footer-bottom-paysystems {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .youtube-frame {
+        width: 320px;
+    }
 }
